@@ -3,10 +3,11 @@ task.wait(20) -- ระยะเวลารอ ถ้าเปิดหลา�
 getgenv().ConfigsKaitun = {
 	Beta_Fix_Data_Sync = true,
 
+	NoDeletePlayer = false,
+
 	["Block Pet Gift"] = true,
- 
+
 	Collect_Cooldown = 60, -- cooldown to collect fruit
-	JustFuckingCollectAll = true, -- Collect all (fruit not wait mutation)
  
 	["Low Cpu"] = true,
 	["Auto Rejoin"] = true,
@@ -81,22 +82,13 @@ Lock = {
 	Events = {
 		["Cook Event"] = {
 			Minimum_Money = 1_000_000, -- minimum money to start play this event
-		},
-		["Zen Event"] = {
-			["Restocking"] = { -- Minimumthing to restock
-				Max_Restocks_Price = 3_000_000_000_000,
-				Minimum_Money = 1_000_000,
-				Minimum_Chi = 20
-			},
-			["Doing"] = {
-				Minimum_Money = 1_000_000, -- minimum money to start play this event
-				First_Upgrade_Tree = 7,
-				Maximum_Chi = 100,
- 
-				-- // thing to skip doing
-				Skip_Fox = false, -- Skip The Middle Fox Trade (Corrupted Kitsune)
-				Skip_Corrupted_OldMan = false, -- Skip The OldMan Trade (Kodama)
-				-- If u need to skip Tranquill OldMan Set "First Upgrade Tree" To 0 and Max Chi To 99999
+			Rewards_Item = { -- The top is the most top mean prefered.
+				"Gourmet Egg",
+				"Gorilla Chef",
+				"Culinarian Chest",
+				"Gourmet Seed Pack",
+				"Sunny-Side Chicken",
+				-- u can add it more as u want, if it not in list.
 			}
 		},
 		["Traveling Shop"] = {
