@@ -97,6 +97,10 @@ Lock = {
 			"Anti Bee Egg",
 		},
 		Shop = {
+			"Zen Egg",
+			"Zen Seed Pack",
+			"Koi",
+			"Raiju",
 		},
 		Start_Do_Honey = 2_000_000 -- start trade fruit for honey at money
 	},
@@ -132,15 +136,22 @@ Lock = {
 	},
  
 	Pets = {
-		["Start Delete Pet At"] = 75,
+		["Start Delete Pet At"] = 45,
 		["Upgrade Slot"] = {
 			["Pet"] = {
-				["Starfish"] = { 8, 100, 1 },
+				["Starfish"] = { 5, 100, 1, true },
 				["Capybara"] = { 8, 100, 2 },
 			},
-			["Limit Upgrade"] = 8,
+			["Limit Upgrade"] = 5,
 			["Equip When Done"] = {
-				["Capybara"] = { 3, 100, 1},
+				["Tanchozuru"] = { 5, 100, 1 }, -- 5 on the first mean equip only 5 | pet , 100 mean equip only level pet lower than 100 | the one on the last is priority it will ues first if possible 
+				["Ostrich"] = { 3, 100, 2 },
+				["Blood Kiwi"] = { 8, 100 },
+				["Seal"] = { 8, 100 },
+				["Rooster"] = { 8, 100 },
+				["Starfish"] = { 5, 75 },
+				["Spaghetti Sloth"] = { 4, 100 },
+				["Koi"] = { 2, 100 },
 			},
 		},
 		Favorite_LockedPet = true,
