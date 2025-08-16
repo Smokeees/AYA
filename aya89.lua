@@ -48,25 +48,25 @@ getgenv().ConfigsKaitun = {
 		Place = {
 			Mode = "Select", -- Select , Lock
 			Select = {
-				"Blueberry"
-                "Strawberry"
-                "Watermelon"
-                "Starfruit"
-                "Pineapple"
-                "Durian"
-                "Dragon Fruit"
-                "Spiked Mango"
-                "Maple Apple"
-                "Pitcher Plant"
-                "Horned Dinoshroom"
-                "Rafflesia"
-                "Chocolate Carrot"
-                "Taro Flower"
-                "Beanstalk"
-                "Sugarglaze"
-                "Horsetail"
-                "Ember Lily"
-                "Mangosteen"
+				"Blueberry",
+                "Strawberry",
+                "Watermelon",
+                "Starfruit",
+                "Pineapple",
+                "Durian",
+                "Dragon Fruit",
+                "Spiked Mango",
+                "Maple Apple",
+                "Pitcher Plant",
+                "Horned Dinoshroom",
+                "Rafflesia",
+                "Chocolate Carrot",
+                "Taro Flower",
+                "Beanstalk",
+                "Sugarglaze",
+                "Horsetail",
+                "Ember Lily",
+                "Mangosteen",
 			},
 			Lock = {
 				"Maple Apple",
