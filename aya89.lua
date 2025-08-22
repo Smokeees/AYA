@@ -3,7 +3,7 @@ task.wait(15)
 script_key="BVCNTyzEocNdZLFrjNbmLpRQYfiCGaiJ";
 getgenv().Configs = {
     TurboMode = true, -- โหมดฟาร์มไว (ไม่มากขนาดนั้นอยู่ที่ตัวรัน)
-    WebhookUrl = "https://ptb.discord.com/api/webhooks/1270470782761439315/2xBRTWu0xy4H3gZ0aDARCPJ4Mg8aVAWyCA8FsVGzvieFQUYDdGCZlEyNeMsEc86ZDCPh", -- ลิ้ง Webhook Discord
+    WebhookUrl = "", -- ลิ้ง Webhook Discord
     LimitDiamond = 0, -- จำกัด Diamond ถ้าถึงกำหนดจะหยุดฟาร์ม / ถ้าเป็น 0 คือฟาร์มเรื่อยๆ
     WebhookOneTime = false, -- ถ้าเป็น true จะแจ้งเฉพาะตอน Diamond ถึงที่กำหนด
     ServerTimeout = 40, -- กำหนดการหมดเวลายืนในเซิร์ฟ X วิให้ย้าย (ไม่จำเป็นมากเอาไว้กันบัคเท่านั้น)
