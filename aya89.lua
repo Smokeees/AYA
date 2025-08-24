@@ -1,3 +1,4 @@
+repeat task.wait() until game:IsLoaded()
 script_key="BVCNTyzEocNdZLFrjNbmLpRQYfiCGaiJ";
 getgenv().Configs = {
     TurboMode = true, -- โหมดฟาร์มไว (ไม่มากขนาดนั้นอยู่ที่ตัวรัน)
