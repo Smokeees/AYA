@@ -1,3 +1,5 @@
+repeat task.wait() until game:IsLoaded()
+task.wait(10)
 _G.OPFarmGem = true
 -- Script Here !!!
 script_key="JAxjjIyieHEgMpZwsBxezvvyKbOLvZYd";
