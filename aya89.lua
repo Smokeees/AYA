@@ -1,6 +1,6 @@
-repeat task.wait() until game:IsLoaded()
-task.wait(10)
-_G.OPFarmGem = true
--- Script Here !!!
-script_key="JAxjjIyieHEgMpZwsBxezvvyKbOLvZYd";
-loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/5f69c589c2e08aee7d37c351dd3068af.lua"))()
+getgenv().LockDiamond = 2000 --ตั้งจำนวนเพชร
+getgenv().LockDiamondEnabled = false --เปิดว่าจะล็อคเพชรไหม
+getgenv().SelectClasses = {"Cyborg"}
+getgenv().BuyClassSelect = false --เปิดว่าจะซื้อคลาสไหม
+getgenv().Webhookurl = "" -- ใส่ลิ้งเว็บฮุก
+loadstring(game:HttpGet('https://raw.githubusercontent.com/AAwful/Vector_Hub/0/1k'))()
