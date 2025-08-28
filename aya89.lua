@@ -1,5 +1,5 @@
 repeat wait() until game:IsLoaded()
-task.wait(10)
+task.wait(5)
 _G.Lock = { -- Cyborg , Assassin , Pyromaniac 
     "NIL" -- ถ้าใส่ NIL ก็คือไม่ต้องซื้ออาชีพ เก็บเพชรยาวๆ
 }
