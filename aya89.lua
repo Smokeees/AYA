@@ -1,5 +1,4 @@
 repeat wait() until game:IsLoaded()
-task.wait(5)
 script_key="BVCNTyzEocNdZLFrjNbmLpRQYfiCGaiJ";
 getgenv().Configs = {
     WebhookUrl = "", -- ลิ้ง Webhook Discord
