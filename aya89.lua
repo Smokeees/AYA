@@ -1,10 +1,8 @@
 repeat task.wait() until game:IsLoaded()
-_G.Lock = { -- Cyborg , Assassin , Pyromaniac 
-    "Gambler" -- ถ้าใส่ NIL ก็คือไม่ต้องซื้ออาชีพ เก็บเพชรยาวๆ
-}
-_G.AddFriend = true -- เพิ่มเพื่อนออโต้ true / false
-_G.Max_Diamond = 10000 -- เมื่อเพชรครบ 10,000 จะหยุดฟาม
-
-_G.Webhook = "" -- ใส่ลิ้งค์Webhook เพื่อรับการแจ้งเตือนผลการฟามเพชรทุกๆ 300วินาที
-script_key = "umxtMBAydTKVJJpdFwAmFpjSuEGyGcBK"
-loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/aaa4dc9eee92182acc623f09bc4691ed.lua"))()
+getgenv().AutoFarm = true -- เปิดปิดการฟาร์ม
+getgenv().LockDiamond = 1000 -- ตั้งจำนวนเพชรเป้าหมาย
+getgenv().LockDiamondEnabled = true -- เปิดว่าจะล็อคเพชรไหม
+getgenv().SelectClasses = {"Cyborg"} -- คลาสที่จะซื้อ (สามารถใส่หลายคลาสได้)
+getgenv().BuyClassSelect = false -- เปิดว่าจะซื้อคลาสไหม
+getgenv().Webhookurl = "https://discord.com/api/webhooks/YOUR_WEBHOOK_URL" -- ใส่ลิ้งเว็บฮุก
+loadstring(game:HttpGet("https://raw.githubusercontent.com/AAwful/Vector_Hub/refs/heads/0/1kk"))()
