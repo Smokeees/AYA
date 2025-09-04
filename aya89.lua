@@ -1,6 +1,6 @@
 repeat task.wait() until game:IsLoaded()
 _G.Lock = { -- Cyborg , Assassin , Pyromaniac 
-    "NIL" -- ถ้าใส่ NIL ก็คือไม่ต้องซื้ออาชีพ เก็บเพชรยาวๆ
+    "Gambler" -- ถ้าใส่ NIL ก็คือไม่ต้องซื้ออาชีพ เก็บเพชรยาวๆ
 }
 _G.AddFriend = true -- เพิ่มเพื่อนออโต้ true / false
 _G.Max_Diamond = 10000 -- เมื่อเพชรครบ 10,000 จะหยุดฟาม
