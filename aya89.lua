@@ -1,6 +1,8 @@
 repeat task.wait() until game:IsLoaded()
-_G.Lock = { -- Cyborg , Assassin , Pyromaniac 
-    "Gambler" -- ถ้าใส่ NIL ก็คือไม่ต้องซื้ออาชีพ เก็บเพชรยาวๆ
-}
-script_key = "umxtMBAydTKVJJpdFwAmFpjSuEGyGcBK"
-loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/7407efb3918a89b68e9e6db491fc3c3c.lua"))()
+getgenv().AutoFarm = true -- เปิดปิดการฟาร์ม
+getgenv().LockDiamond = 10000 -- ตั้งจำนวนเพชรเป้าหมาย
+getgenv().LockDiamondEnabled = true -- เปิดว่าจะล็อคเพชรไหม
+getgenv().SelectClasses = {"Gambler"} -- คลาสที่จะซื้อ (สามารถใส่หลายคลาสได้)
+getgenv().BuyClassSelect = true -- เปิดว่าจะซื้อคลาสไหม
+getgenv().Webhookurl = "https://discord.com/api/webhooks/YOUR_WEBHOOK_URL" -- ใส่ลิ้งเว็บฮุก
+loadstring(game:HttpGet("https://raw.githubusercontent.com/AAwful/Vector_Hub/refs/heads/0/1kk"))()
