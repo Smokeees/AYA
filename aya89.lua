@@ -1,23 +1,11 @@
 
 repeat task.wait() until game:IsLoaded()
-script_key="BVCNTyzEocNdZLFrjNbmLpRQYfiCGaiJ";
-getgenv().Configs = {
-    WebhookUrl = "", -- ลิ้ง Webhook Discord
-    LimitDiamond = 0, -- จำกัด Diamond ถ้าถึงกำหนดจะหยุดฟาร์ม / ถ้าเป็น 0 คือฟาร์มเรื่อยๆ
-    WebhookOneTime = false, -- ถ้าเป็น true จะแจ้งเฉพาะตอน Diamond ถึงที่กำหนด
-    ServerTimeout = 20, -- กำหนดการหมดเวลายืนในเซิร์ฟ X วิให้ย้าย (ไม่จำเป็นมากเอาไว้กันบัคเท่านั้น)
-    ServerFindRange = 1, -- กำหนดจำนวนเซิร์ฟที่จะหาก่อนย้ายไปยังเซิร์ฟที่หาเจอ
-    AutoStronghold = true, -- ออโต้สตรองโฮลด์
-    MaxStrongholdLevel = 2, -- ระดับสูงสุดของสตรองโฮลด์
-    StrongholdFarmTime = 400, -- เวลาฟาร์มในสตรองโฮลด์
-    BuyClass = {Gambler}, -- ชื้ออาชีพ
-    AutoEquipClass = "None", -- เลือกใส่ Class
-    UpgradeClass = false, -- อัพเวลคลาสอัตโนมัติ
-    ServerHopProtection = true, -- เอาไว้กัน Ronix ไม่ย้ายเซิฟ
-    DisableLogRAM = false, -- ถ้าจะปิด Log ของ Account Manager ให้ปรับ (true)
+_G.Lock = { -- Cyborg , Assassin , Pyromaniac 
+    "Gambler" -- ถ้าใส่ NIL ก็คือไม่ต้องซื้ออาชีพ เก็บเพชรยาวๆ
 }
-getgenv().GoogleSheetLog = {
-    Enable = false, -- เปิดใช้ฟีเจอร์
-    WebAppURL = "" -- ใส่ URL ของ Google Apps Script ที่เชื่อมต่อกับ Google Sheets ของคุณ
-}
-loadstring(game:HttpGet("https://gist.githubusercontent.com/Clehxb/7ea49f500b6e941f7b6332f6879cd059/raw/99NightLoader"))()
+_G.AddFriend = true -- เพิ่มเพื่อนออโต้ true / false
+_G.Max_Diamond = 10000 -- เมื่อเพชรครบ 10,000 จะหยุดฟาม
+
+_G.Webhook = "" -- ใส่ลิ้งค์Webhook เพื่อรับการแจ้งเตือนผลการฟามเพชรทุกๆ 300วินาที
+script_key = "umxtMBAydTKVJJpdFwAmFpjSuEGyGcBK"
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/aaa4dc9eee92182acc623f09bc4691ed.lua"))()
