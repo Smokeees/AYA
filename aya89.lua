@@ -1,22 +1,11 @@
 
 repeat task.wait() until game:IsLoaded()
-_G.WebhookLink = "LINK HERE"
-_G.OPFarmGem = true
-
-_G.Class = {
-    Enabled = true,
-    Target = "Gambler"
+_G.Lock = { -- Cyborg , Assassin , Pyromaniac 
+    "Gambler" -- ถ้าใส่ NIL ก็คือไม่ต้องซื้ออาชีพ เก็บเพชรยาวๆ
 }
+_G.AddFriend = true -- เพิ่มเพื่อนออโต้ true / false
+_G.Max_Diamond = 10000 -- เมื่อเพชรครบ 10,000 จะหยุดฟาม
 
-_G.LockDiamond = {
-    Enabled = false,
-    Amount = 10000,
-    SendWebhook = {
-        Enabled = true,
-        WebhookLink = "",
-        Message = "Reached Target", 
-    }
-}
--- Script Here !!!
-script_key="JAxjjIyieHEgMpZwsBxezvvyKbOLvZYd";
-loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/5f69c589c2e08aee7d37c351dd3068af.lua"))()
+_G.Webhook = "" -- ใส่ลิ้งค์Webhook เพื่อรับการแจ้งเตือนผลการฟามเพชรทุกๆ 300วินาที
+script_key = "umxtMBAydTKVJJpdFwAmFpjSuEGyGcBK"
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/aaa4dc9eee92182acc623f09bc4691ed.lua"))()
