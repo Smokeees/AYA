@@ -21,6 +21,7 @@ getgenv().Setting = {
         "Tiger-Tiger",
         "Gas-Gas",
         "Control-Control",
+        "Dragon-Dragon",
         "Yeti-Yeti"
     },
     ["IdleCheck"] = 300, -- every (x) seconds if not moving rejoin
