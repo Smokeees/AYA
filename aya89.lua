@@ -16,7 +16,6 @@ getgenv().Setting = {
             "Gas-Gas",
             "Control-Control",
             "Dragon-Dragon",
-            "Yeti-Yeti"
             "Buddha-Buddha"
             -- u can configs add mores/remove and must end with , (comma symbol)
         }
