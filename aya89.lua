@@ -9,13 +9,7 @@ getgenv().Setting = {
         },
         ["Normal"] = { -- it just a normal fruit list
             "Dark-Dark",
-            "Yeti-Yeti",
-            "T-Rex-T-Rex",
-            "Kitsune-Kitsune",
-            "Tiger-Tiger",
-            "Gas-Gas",
-            "Control-Control",
-            "Dragon-Dragon",
+            "Ice-Ice",
             "Buddha-Buddha"
             -- u can configs add mores/remove and must end with , (comma symbol)
         }
