@@ -1,4 +1,5 @@
 script_key="fdohMKSCYPxnkusRiVzqGWryZABcixKZ";
+-- Key
 getgenv().Config = {
     Build = {
         Main = "Luck", -- Base on: "Damage", "Luck"
@@ -138,4 +139,4 @@ getgenv().Config = {
         LeaveServer = false, -- Auto Leave Server and return to home page if not in Private Server
     }
 }
-loadstring(game:HttpGet("https://api.luarmor.net/files/v4/loaders/5e53e03e462e69f749e2c1d56473860a.lua"))()
+loadstring(game:HttpGet("https://api.luarmor.net/files/v4/loaders/6448cfb42f495f885b9bab78ad2e244c.lua"))()
