@@ -1,4 +1,4 @@
-script_key="XHfvKDdneAnLINdURlohQbVTHfdzxaVM";
+script_key="fdohMKSCYPxnkusRiVzqGWryZABcixKZ";
 getgenv().Config = {
     Build = {
         Main = "Luck", -- Base on: "Damage", "Luck"
