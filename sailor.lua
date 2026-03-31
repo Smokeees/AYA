@@ -25,7 +25,9 @@ getgenv().Config = {
         ["DamageReduction"] = false,
     },
 
+    Specific_Trait = {"Emperor", "Celestial"}, -- Find Target Trait
     Specific_Clan = {"Eminence"}, -- Left {} if you want any legendary clan
+    Specific_Power = {"Colossus"}, -- Find Target Power
 
     Blacklist_Bosses = { -- WARNING DISABLE SOME BOSS YOU WON'T GET ITEM FOR WEAPON/RANK ASCEND
         ["SaberBoss"] = false,
@@ -50,6 +52,7 @@ getgenv().Config = {
         ["AtomicBoss"] = false,
         ["YamatoBoss"] = false,
         ["StrongestShinobiBoss"] = false,
+        ["MoonSlayerBoss"] = false,
     },
 
     Keep_Summon_Boss = {  -- Keep Summon Bosses since you got all items
@@ -61,31 +64,36 @@ getgenv().Config = {
         ["GilgameshBoss"] = false,
         ["BlessedMaidenBoss"] = false,
         ["SaberAlterBoss"] = false,
+        ["MoonSlayerBoss"] = false,
+        ["AnosBoss"] = false,
         ["AtomicBoss"] = false,
     },
 
     Multi_Island_Farm = {   -- IDK when no boss teleport to multiple island to farm
-        Enable = false, -- Enable Multi_Island_Farm
+        Enable = true, -- Enable Multi_Island_Farm
         MainTool = "Strongest In History", -- Tool to use for farming mobs on other islands
         WhiteList_Abilities = {2}, -- Only use these abilities
     },
+
+    Blacklist_Rank = "Ascend VIII", -- Stop farming rank when reached this rank
+    
     End_Farm_Rank = { -- If reached this rank all boss farm is stopped
-        Enable = false,
+        Enable = true,
         ["Rank"] = "Ascend VIII",
             BossRush = {
-                Enable = false,
+                Enable = true,
                 Build = "Damage",
                 MainTool = "Abyssal Empress",
                 WhiteList_Abilities = {4,5}, --
-                AutoReplay = false,
+                AutoReplay = true,
                 Difficulty = "Easy",
             },
             Tower = {
-                Enable = false,
+                Enable = true,
                 Build = "Damage",
                 MainTool = "Abyssal Empress",
                 WhiteList_Abilities = {4,5},
-                AutoReplay = false,
+                AutoReplay = true,
             },
     },
 
@@ -114,6 +122,7 @@ getgenv().Config = {
                 ["Saber Alter"] = true,
                 ["Strongest Shinobi"] = true,
                 ["Abyssal Empress"] = true,
+                ["Moon Slayer"] = true,
                 ["Atomic"] = true,
                 ["True Aizen"] = true,
             },
