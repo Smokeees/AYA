@@ -6,7 +6,7 @@ getgenv().Config = {
     },
 
     Auto_Passive = {
-        Enable = true, -- Enable/Disable passive reroll
+        Enable = false, -- Enable/Disable passive reroll
         Target_Passive = "Fortune Chosen", -- Target Passive On Weapon
         MainTool = {     -- Tools to use for activating passives
             "Strongest In History", 
@@ -78,22 +78,22 @@ getgenv().Config = {
     Blacklist_Rank = "Ascend VIII", -- Stop farming rank when reached this rank
     
     End_Farm_Rank = { -- If reached this rank all boss farm is stopped
-        Enable = true,
+        Enable = false,
         ["Rank"] = "Ascend VIII",
             BossRush = {
-                Enable = true,
+                Enable = false,
                 Build = "Damage",
                 MainTool = "Abyssal Empress",
                 WhiteList_Abilities = {4,5}, --
-                AutoReplay = true,
+                AutoReplay = false,
                 Difficulty = "Easy",
             },
             Tower = {
-                Enable = true,
+                Enable = false,
                 Build = "Damage",
                 MainTool = "Abyssal Empress",
                 WhiteList_Abilities = {4,5},
-                AutoReplay = true,
+                AutoReplay = false,
             },
     },
 
@@ -134,8 +134,8 @@ getgenv().Config = {
         }
     },
     Require_Private_Server = {
-        Kick = true, -- Auto Kick Player if not in Private Server
-        LeaveServer = true, -- Auto Leave Server and return to home page if not in Private Server
+        Kick = false, -- Auto Kick Player if not in Private Server
+        LeaveServer = false, -- Auto Leave Server and return to home page if not in Private Server
     }
 }
 loadstring(game:HttpGet("https://api.luarmor.net/files/v4/loaders/5e53e03e462e69f749e2c1d56473860a.lua"))()
